@@ -99,6 +99,12 @@ public class AutoActions {
         while (leftFrontDrive.getCurrentPosition() < startPos + ticks) {
             // do nothing
         }
+        // stop motors
+        leftFrontDrive.setPower(0);
+        rightFrontDrive.setPower(0);
+        leftBackDrive.setPower(0);
+        rightBackDrive.setPower(0);
+
         // done!
     }
 
